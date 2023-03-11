@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="557.0" prefWidth="1142.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ReturnBookC">
+   <children>
+      <TextField fx:id="kirjaID" layoutX="34.0" layoutY="92.0" prefHeight="35.0" prefWidth="256.0" promptText="%Book_ID" />
+      <Text layoutX="34.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%Return_book">
+         <font>
+            <Font name="Modern No. 20" size="26.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tableview" layoutX="335.0" layoutY="92.0" prefHeight="285.0" prefWidth="783.0">
+        <columns>
+          <TableColumn fx:id="kirja_ISBN" prefWidth="75.0" text="kirja_ISBN" />
+          <TableColumn fx:id="nimi" prefWidth="75.0" text="Nimi" />
+            <TableColumn fx:id="kunstantaja" prefWidth="105.0" text="Kustantaja" />
+            <TableColumn fx:id="kirjoittajat" prefWidth="126.0" text="Kirjoittaja" />
+            <TableColumn fx:id="kuva" prefWidth="138.0" text="Kuvaus" />
+            <TableColumn fx:id="julkasuvuosi" prefWidth="101.0" text="Julkasuvuosi" />
+            <TableColumn fx:id="sivumäärä" prefWidth="78.0" text="Sivumäärä" />
+            <TableColumn fx:id="erapaiva" prefWidth="78.0" text="Eräpäivä" />
+        </columns>
+      </TableView>
+      <Button fx:id="update" layoutX="961.0" layoutY="384.0" mnemonicParsing="false" onAction="#UpdateTable" prefHeight="35.0" prefWidth="85.0" text="%Update" />
+      <Button fx:id="delete" layoutX="1054.0" layoutY="384.0" mnemonicParsing="false" onAction="#deleteBook" prefHeight="35.0" prefWidth="60.0" text="%Delete" />
+      <Button fx:id="returnBook" layoutX="34.0" layoutY="346.0" mnemonicParsing="false" onAction="#returnBook" prefHeight="35.0" prefWidth="122.0" text="%Return">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <Button fx:id="btnPeruuttaa" layoutX="168.0" layoutY="346.0" mnemonicParsing="false" onAction="#btnPeruuttaa" prefHeight="35.0" prefWidth="122.0" text="%Cancel">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Text layoutX="414.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%Customer_ID" wrappingWidth="584.1599884033203">
+         <font>
+            <Font name="Modern No. 20" size="26.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

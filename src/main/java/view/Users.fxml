@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="607.0" prefWidth="434.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.CreateUser">
+   <children>
+      <Text layoutX="57.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%Add_new_user">
+         <font>
+            <Font name="Berlin Sans FB" size="29.0" />
+         </font>
+      </Text>
+      <TextField fx:id="luoEtunimi" layoutX="61.0" layoutY="87.0" prefHeight="35.0" prefWidth="306.0" promptText="%First_name" />
+      <TextField fx:id="luoSukunimi" layoutX="61.0" layoutY="132.0" prefHeight="35.0" prefWidth="306.0" promptText="%Last_name" />
+      <Button fx:id="luoBtn" layoutX="57.0" layoutY="490.0" mnemonicParsing="false" onAction="#luoKayttajaa" prefHeight="35.0" prefWidth="150.0" text="%Add">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="peruuttaa" layoutX="217.0" layoutY="490.0" mnemonicParsing="false" onAction="#peruuttaa" prefHeight="35.0" prefWidth="150.0" text="%Cancel">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <TextField fx:id="luoSPosti" layoutX="64.0" layoutY="178.0" prefHeight="35.0" prefWidth="306.0" promptText="%Email" />
+      <TextField fx:id="luoPNumero" layoutX="64.0" layoutY="221.0" prefHeight="35.0" prefWidth="306.0" promptText="%ZIP_code" />
+      <TextField fx:id="luoOsoite" layoutX="64.0" layoutY="269.0" prefHeight="35.0" prefWidth="306.0" promptText="%Address" />
+      <TextField fx:id="luoPuheNumero" layoutX="64.0" layoutY="319.0" prefHeight="35.0" prefWidth="306.0" promptText="%Phone_number" />
+      <TextField fx:id="luoKaupunki" layoutX="64.0" layoutY="365.0" prefHeight="35.0" prefWidth="306.0" promptText="%City" />
+   </children>
+</Pane>
